@@ -1,0 +1,60 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    border: none;
+}
+
+body {
+    height: 500vh;
+}
+
+.cabecalho-azul {
+    background-color: rgb(1, 1, 202);
+    padding: 1px;
+    height: 90px;
+
+    animation-name: piscar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+
+ @keyframes piscar {
+            0%{
+                background-color: red;
+            }
+            25% {
+                background-color: royalblue;
+            }
+            50% {
+                background-color: aqua;
+            }
+            100% {
+                background-color: blueviolet;
+            }
+        }
+
+
+.pesquisa {
+    background-color: aqua;
+    padding: 1px;
+    height: 40px;
+    width: 200px;
+    position: relative;
+    text-align: center;
+    left: 545px;
+
+}
+
+.bola {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

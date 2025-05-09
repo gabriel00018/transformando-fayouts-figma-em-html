@@ -1,0 +1,156 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    width: 100vw;
+  }
+
+ 
+  .caixa-vermelho {
+    background-color: red;
+    width: 230px;
+    height: 450px;
+    margin: 40px;
+    position: relative;
+
+    animation-name: piscar;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes piscar {
+
+    2%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: #0839e2;       
+    }
+
+    60%{
+        background-color: darkblue;
+    }
+
+    93%{
+        background-color: azure;
+    }
+
+}
+
+
+ 
+  .caixa-verde-no-vermelho {
+    background-color: #18f55a;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+  }
+ 
+  .caixa-preta-no-vermelho {
+    background-color: #240c0c;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 35px;
+  }
+ 
+
+  .caixa-verde {
+    background-color: #2d9c4a;
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    animation-name: piscar-dois;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+
+ @keyframes piscar-dois {
+            0%{
+                background-color: rgb(0, 255, 55);
+            }
+            25% {
+                background-color: rgb(255, 247, 0);
+
+            }
+            50% {
+                background-color: aqua;
+            }
+            100% {
+                background-color: rgb(255, 0, 136);
+            }
+        }
+
+
+ 
+  .caixa-preta-no-verde {
+    background-color: #240c0c;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+ 
+
+  .caixa-azul {
+    background-color: #0839e2;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+     animation-name: piscar-tres;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+  }
+ 
+
+ @keyframes piscar-tres {
+            0%{
+                background-color:#0839e2;
+            }
+            25% {
+                background-color: rgb(255, 0, 0);
+
+            }
+            50% {
+                background-color: rgb(105, 91, 137);
+            }
+            100% {
+                background-color: rgb(61, 255, 190);
+            }
+        }
+
+
+  .caixa-preta-no-azul {
+    background-color: #240c0c;
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 140;
+  }
+
